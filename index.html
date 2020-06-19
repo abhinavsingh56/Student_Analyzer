@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>sdbct.ac.in</title>
+<meta charset="UTF-8">
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css">
+	<style type="text/css">body {
+  font-family: tahoma;
+  background-image: url(https://s3.ca-central-1.amazonaws.com/image-web-frankie/BackgroundBlue.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.testimonial {
+  background-color: white;
+  text-align: center;
+  padding: 30px 30px 50px;
+  margin: 100px 15px 160px;
+  position: relative;
+}
+
+.testimonial::before,
+.testimonial::after {
+  content: "";
+  border-top: 40px solid white;
+  border-right: 125px solid transparent;
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+}
+
+.testimonial::after {
+  border-right: none;
+  border-left: 125px solid transparent;
+  left: auto;
+  right: 0;
+}
+
+.testimonial .icon {
+  display: inline-block;
+  font-size: 80px;
+  color: #016d9b;
+  margin-bottom: 20px;
+  opacity: 0.6;
+}
+
+.testimonial .description {
+  font-size: 14px;
+  color: #777;
+  text-align: justify;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+.testimonial .testimonial-content {
+  width: 100%;
+  left: 0;
+  position: absolute;
+}
+
+.testimonial .pic {
+  display: inline-block;
+  border: 4px solid white;
+  border-radius: 50%;
+  box-shadow: 0 0 4px 4px #016d9b;
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
+}
+
+.testimonial .pic img {
+  width: 100%;
+  height: auto;
+}
+
+.testimonial .name {
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  text-transform: capitalize;
+  margin: 10px 0 5px 0;
+}
+
+.testimonial .title {
+  display: block;
+  font-size: 14px;
+  color: #ffd9b8;
+}
+
+.owl-controls {
+  margin-top: 20px;
+}
+
+.owl-pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.owl-page {
+  height: 10px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10%;
+}
+
+.owl-page:hover,
+.owl-page.active {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.owl-page:not(first-item) {
+  margin-left: 10px;
+}
+</style>
+<style>
+    .site-footer
+{
+  background-color:#075587;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+.w3-bar w3-black w3-card{
+    background-color:blue !important;
+}
+.w3-bar w3-black w3-card{
+    background-color:blue !important;
+}
+h2{
+  text-align:center;
+  padding: 20px;
+}
+
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+.w3-top a{
+    text-decoration: none;
+    
+}
+.w3-top a:hover{
+    background-color: #34a4eb !important;
+}
+.col-xs-6 col-md-3{
+    margin-top: 50px;
+}
+</style>
+<body>
+<div class="w3-top">
+  <div class="w3-bar w3-blue w3-card" >
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="antiraging.jsp" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ANTIRAGING</a>
+    <a href="campuslife.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CAMPUSLIFE</a>
+    <a href="gallery.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">GALLERY</a>
+     <a href="about.jsp" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT US</a>
+    <a href="contact.jsp" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT US</a>
+    
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">LOGINS<i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="alogin.jsp" class="w3-bar-item w3-button">Admin Login</a>
+        <a href="slgon.jsp" class="w3-bar-item w3-button">Teacher Login</a>
+        <a href="lscontroll.jsp" class="w3-bar-item w3-button">Student Login</a>
+      </div>
+    </div>
+    <a><img src="sd.png" height="50px" width="150px"></a>
+  </div>
+</div>
+
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="Gallery" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Home</a>
+  <a href="slogin.jsp" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Login</a>
+  <a href="about us" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">About us</a>
+  <a href="contact us" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Contact us</a>
+</div>
+
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <div class="mySlides w3-display-container w3-center">
+    <img src="s5.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+        <h3>The Tarang</h3>
+      <p><b>Mooj in tarang</b></p>   
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="s4.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Dance</h3>
+      <p><b>The Tarang</b></p>    
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="s6.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>SDBCT</h3>
+      <p><b>Mooj Masti</b></p>    
+    </div>
+  </div>
+
+
+  <div class="demo">
+  <div class="container">
+    <div class="row">
+      <div id="testimonial-slider" class="owl-carousel">
+        <div class="testimonial">
+          <span class="icon fa fa-quote-left"></span>
+          <p class="description">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+          </p>
+          <div class="testimonial-content">
+            <div class="pic">
+              <img src="http://abhirajput.epizy.com/abhinav.jpg" alt="">
+            </div>
+            <h3 class="name">Manish Yadav</h3>
+            <span class="title">Web Developer</span>
+          </div>
+        </div>
+        <div class="testimonial">
+          <span class="icon fa fa-quote-left"></span>
+          <p class="description">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+          </p>
+          <div class="testimonial-content">
+            <div class="pic">
+              <img src="https://scontent.fbho1-1.fna.fbcdn.net/v/t1.0-1/c0.0.160.160a/p160x160/36064076_629457997419473_7301316262850723840_n.jpg?_nc_cat=107&_nc_sid=dbb9e7&_nc_ohc=9kl4MoyoQNkAX_VjgeO&_nc_ht=scontent.fbho1-1.fna&oh=aa904f7cce3f8f7fa240212381414a61&oe=5EF93B25" alt="">
+            </div>
+            <h3 class="name"></h3>
+            <span class="title">Web Developer</span>
+          </div>
+        </div>
+        <div class="testimonial">
+          <span class="icon fa fa-quote-left"></span>
+          <p class="description">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+          </p>
+          <div class="testimonial-content">
+            <div class="pic">
+              <img src="https://scontent.fbho1-2.fna.fbcdn.net/v/t1.0-1/p160x160/44985081_1911825092453277_6723086520892260352_o.jpg?_nc_cat=103&_nc_sid=dbb9e7&_nc_ohc=eB5Q1eDTYqUAX-c0R4T&_nc_ht=scontent.fbho1-2.fna&_nc_tp=6&oh=be8ab30ac5897db5390d2cabb275c5db&oe=5EFE80C7" alt="">
+            </div>
+            <h3 class="name">Kashal Bihari</h3>
+            <span class="title">Student</span>
+          </div>
+        </div>
+          <div class="testimonial">
+          <span class="icon fa fa-quote-left"></span>
+          <p class="description">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+          </p>
+          <div class="testimonial-content">
+            <div class="pic">
+              <img src="https://scontent.fbho1-2.fna.fbcdn.net/v/t31.0-0/p118x90/18672976_1941162999460812_389385188691974896_o.jpg?_nc_cat=109&_nc_sid=7aed08&_nc_ohc=yfZt2rSYNi8AX9L6ogJ&_nc_ht=scontent.fbho1-2.fna&_nc_tp=6&oh=15181a6004e3051573d6a28d8c7b1fc0&oe=5EEE28C2" alt="">
+            </div>
+            <h3 class="name">Kashal Bihari</h3>
+            <span class="title">Student</span>
+          </div>
+        </div>
+        
+                <div class="testimonial">
+          <span class="icon fa fa-quote-left"></span>
+          <p class="description">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+          </p>
+          <div class="testimonial-content">
+            <div class="pic">
+              <img src="https://scontent.fbho1-2.fna.fbcdn.net/v/t1.0-1/p160x160/72562259_1021323768199444_6123373245145022464_n.jpg?_nc_cat=104&_nc_sid=dbb9e7&_nc_ohc=pFIr2QsUSXQAX9_eMe3&_nc_ht=scontent.fbho1-2.fna&_nc_tp=6&oh=bc57fd65d0ad3fb203b5f5d6613fb602&oe=5EFB4A3B" alt="">
+            </div>
+            <h3 class="name">Manish Yadav</h3>
+            <span class="title">Student</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+ 
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">CONTACT</h2>
+    <p class="w3-opacity w3-center"><i>Drop a note!</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> Indore, MP<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone :48486468486<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> MAIL:sdbcy.ac.in<br>
+      </div>
+      <div class="w3-col m6">
+          <form action="registers" target="" method="POST">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="message">
+          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  
+  <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+        <img src="sd.png" height='70px' width='200px'>
+            
+            <p>Sushila Devi Bansal College of Technology (SDBCT or S.D. Bansal) is a private enginering and management institute in Indore, India mainly offering graduate and post-graduate courses in engineering and management programmes. the college is approved by AICTE and affiliated to RGPV,bhopal and DAVV, indore. It is an institute of the Bansal Group. It was established in 2005. The site chosen for the institute was Umariya, (15 km) from the city of Indore, with an area of 44 acres (180,000 m2). </p>
+          </div>
+            
+          <div class="col-xs-6 col-md-3">
+              
+            <h6>Categories</h6>
+            <ul class="footer-links">
+              <li><a href="">MECH</a></li>
+              <li><a href="">CS</a></li>
+              <li><a href="">CIVIL</a></li>
+              <li><a href="">MBA</a></li>
+              <li><a href="">IT</a></li>
+              <li><a href="">EC</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="">About Us</a></li>
+              <li><a href="">Contact Us</a></li>
+              <li><a href="">Contribute</a></li>
+              <li><a href="">Privacy Policy</a></li>
+              <li><a href="">Sitemap</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
+         <a href="#">SDBCT</a>.
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+            </ul>
+          </div>
+        </div>
+      </div>
+</footer>
+  
+  
+<script type="text/javascript">$(document).ready(function() {
+  $("#testimonial-slider").owlCarousel({
+    items: 3,
+    itemsDesktop:[1000,3],
+    itemsDesktopSmall:[979,2],
+    itemsTablet:[768, 2],
+    itemsMobile:[650, 1],
+    pagination: true,
+    autoPlay: true
+  });
+});</script>
+
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+$(document).ready(function(){
+    $('.customer-logos').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        arrows: false,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 4
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 3
+            }
+        }]
+    });
+});
+</script>
+
+</body>
+</html>
